@@ -1,0 +1,11 @@
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+SCHEMA_PATH = BASE_DIR / "config" / "schemas.yaml"
+LIVE_DATA = BASE_DIR / "data" / "incoming" / "live_data.csv"
+MODEL_PATH = BASE_DIR / "artifacts" / "rfc_tuned_model.joblib"
+
+MODEL_VERSION = "RFC_TUNED_V1"
+
+TRAINING_DATA = BASE_DIR / "data" / "reference" / "WA_Fn-UseC_-Telco-Customer-Churn 2.csv"

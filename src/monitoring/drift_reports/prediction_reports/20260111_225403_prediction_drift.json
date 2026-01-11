@@ -1,0 +1,16 @@
+{
+    "type": "prediction_drift",
+    "method": "chi_square",
+    "chi2_statistic": 0.0024009565092123182,
+    "p_value": 0.9609196496059715,
+    "alpha": 0.05,
+    "drift_detected": false,
+    "reference_distribution": [
+        5174,
+        1869
+    ],
+    "live_distribution": [
+        2,
+        0
+    ]
+}

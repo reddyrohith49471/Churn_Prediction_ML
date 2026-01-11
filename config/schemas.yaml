@@ -1,0 +1,28 @@
+features:
+  categorical:
+    - gender
+    - Partner
+    - Dependents
+    - PhoneService
+    - MultipleLines
+    - InternetService
+    - OnlineSecurity
+    - OnlineBackup
+    - DeviceProtection
+    - TechSupport
+    - StreamingTV
+    - StreamingMovies
+    - Contract
+    - PaperlessBilling
+    - PaymentMethod
+
+  numerical:
+    - SeniorCitizen
+    - tenure
+    - MonthlyCharges
+    - TotalCharges
+
+metadata:
+  - prediction
+  - model_version
+  - timestamp

@@ -1,0 +1,7 @@
+streamlit
+pandas
+mlflow
+joblib
+imblearn
+scikit-learn==1.6.1
+evidently

@@ -1,6 +1,10 @@
+import os
 from datetime import datetime
-from typing import Dict
-
+from dotenv import load_dotenv
+from typing import Dict, List
+from pathlib import Path
+from src.monitoring.email_notifications.model_drift_email import ModelDriftEmail
+load_dotenv()
 
 class ModelDriftHandler:
     def __init__(
@@ -10,12 +14,25 @@ class ModelDriftHandler:
     ):
         self.warning_threshold = warning_threshold
         self.critical_threshold = critical_threshold
+        self.notifier = ModelDriftEmail(
+            smtp_server = os.getenv("SMTP_SERVER"),
+            smtp_port = os.getenv("SMTP_PORT"),
+            sender_email = os.getenv("SENDER_EMAIL"),
+            sender_password = os.getenv("SENDER_PASSWORD"),
+            receiver_emails = os.getenv("RECEIVER_EMAILS")
+        )
 
-    def handle(self, drift_summary: Dict) -> Dict:
+    def handle(self, drift_summary: Dict, drift_path: Path) -> Dict:
         if not drift_summary["drift_detected"]:
             return self._no_drift_response()
 
         severity = self._assess_severity(drift_summary["metric_analysis"])
+
+        
+        self.notifier.send_drift_alert(
+            subject = f"Model Drift Detected {severity}",
+            attachments = drift_path
+        )
 
         if severity == "CRITICAL":
             return self._critical_response(drift_summary)

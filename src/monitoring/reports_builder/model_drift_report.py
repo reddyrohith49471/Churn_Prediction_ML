@@ -44,7 +44,8 @@ class ModelDriftReport(BaseReport):
         report_dir.mkdir(parents=True, exist_ok=True)
         self._save_report(report, report_dir, timestamp)
 
-        return drift_summary
+        report_path = report_dir
+        return drift_summary, report_path
 
     def _compute_metrics(self, df: pd.DataFrame) -> dict:
         y_true = df[self.target_col]

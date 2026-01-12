@@ -37,13 +37,13 @@ class ModelDriftJob:
 
         timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
 
-        drift_summary = self.model_drift_report.run_and_save(
+        drift_summary, drift_path = self.model_drift_report.run_and_save(
             live_df=live_df,
             report_dir=MODEL_REPORT_DIR,
             timestamp=timestamp
         )
 
-        handling_decision = self.model_drift_handler.handle(drift_summary)
+        handling_decision = self.model_drift_handler.handle(drift_summary, drift_path)
 
         return {
             "status": "COMPLETED",

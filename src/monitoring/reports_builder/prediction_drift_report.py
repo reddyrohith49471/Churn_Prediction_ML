@@ -40,6 +40,10 @@ class PredictionDriftReport(BaseReport):
     
         json_path = report_dir / f"{timestamp}_prediction_drift.json"
         html_path = report_dir / f"{timestamp}_prediction_drift.html"
+        self.paths = {
+            "json_path": json_path,
+            "html_path": html_path
+        }
 
 
         with open(json_path, "w") as f:
@@ -66,5 +70,5 @@ class PredictionDriftReport(BaseReport):
         with open(html_path, "w") as f:
             f.write(html_content)
 
-        return self.report
+        return self.report, self.paths
 

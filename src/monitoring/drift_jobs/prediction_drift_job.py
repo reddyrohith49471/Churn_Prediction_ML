@@ -20,11 +20,11 @@ class PredictionDriftJob:
 
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-        prediction_result = self.prediction_drift_report.run_and_save(reference_df["Churn"],live_df["prediction"],PREDICTION_REPORT_DIR,timestamp)
+        prediction_result, prediction_paths = self.prediction_drift_report.run_and_save(reference_df["Churn"],live_df["prediction"],PREDICTION_REPORT_DIR,timestamp)
 
         print("Prediction Drift Completed")
 
-        prediction_drift_status = self.prediction_drift_handler.handle(prediction_result)
+        prediction_drift_status = self.prediction_drift_handler.handle(prediction_result, prediction_paths)
 
         return f"Prediction Drift Status: {prediction_drift_status}"
 

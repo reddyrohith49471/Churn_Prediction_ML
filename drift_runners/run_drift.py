@@ -2,10 +2,21 @@ from src.monitoring.drift_jobs.data_drift_job import DataDriftJob
 from src.monitoring.drift_jobs.prediction_drift_job import PredictionDriftJob
 from src.monitoring.drift_jobs.model_drift_job import ModelDriftJob
 
-if __name__=="__main__":
+
+def run_all_drifts():
     data_job = DataDriftJob()
     prediction_job = PredictionDriftJob()
     model_job = ModelDriftJob()
-    print(data_job.run())
-    print(prediction_job.run())
-    print(model_job.run())
+
+    results = {
+        "data_drift": data_job.run(),
+        "prediction_drift": prediction_job.run(),
+        "model_drift": model_job.run()
+    }
+
+    return results
+
+
+if __name__ == "__main__":
+    results = run_all_drifts()
+    print(results)

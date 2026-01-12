@@ -16,9 +16,6 @@ class PredictionDriftHandler:
         )
 
     def handle(self, prediction_result: Dict, prediction_paths: Dict) -> str:
-        """
-        Handles actions when prediction drift is detected.
-        """
 
         if not prediction_result.get("drift_detected", False):
             print("No prediction drift detected")

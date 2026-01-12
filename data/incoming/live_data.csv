@@ -3,3 +3,13 @@ Male,0,Yes,Yes,1,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electron
 Male,0,Yes,Yes,1,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,50.0,124.0,0,RFC_TUNED_V1,2026-01-09T12:04:47.389170
 Female,1,No,No,2,No,No phone service,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,123.0,1345.0,1,RFC_TUNED_V1,2026-01-12T16:06:26.545052
 Male,0,Yes,Yes,2,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,132.0,1000.0,1,RFC_TUNED_V1,2026-01-12T16:06:40.977260
+Male,0,Yes,Yes,5,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,12345.0,123.0,1,RFC_TUNED_V1,2026-01-12T16:38:13.083114
+Male,0,Yes,Yes,5,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,12345.0,123.0,1,RFC_TUNED_V1,2026-01-12T16:39:16.291196
+Male,0,Yes,Yes,5,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,12345.0,123.0,1,RFC_TUNED_V1,2026-01-12T16:39:41.619666
+Male,0,Yes,Yes,5,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,12345.0,123.0
+Male,0,Yes,Yes,5,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,123.0,1233.0,1,RFC_TUNED_V1,2026-01-12T16:39:59.299797
+Male,0,Yes,Yes,5,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,123.0,1233.0
+Male,0,Yes,Yes,11,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,90.0,110.0,1,RFC_TUNED_V1,2026-01-12T16:43:31.151056
+Male,0,Yes,Yes,11,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,90.0,110.0
+Male,0,Yes,Yes,10,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,10.0,20.0,1,RFC_TUNED_V1,2026-01-12T16:45:58.328601
+Male,0,Yes,Yes,10,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,10.0,20.0

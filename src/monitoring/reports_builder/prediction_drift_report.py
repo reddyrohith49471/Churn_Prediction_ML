@@ -13,6 +13,7 @@ class PredictionDriftReport(BaseReport):
         report_dir.mkdir(parents=True, exist_ok=True)
         reference_df = reference_df.map({"No":0,"Yes":1})
         reference_df = reference_df.astype(int)
+        live_df = live_df.dropna()
         live_df = live_df.astype(int)
 
         ref_counts = np.bincount(reference_df)

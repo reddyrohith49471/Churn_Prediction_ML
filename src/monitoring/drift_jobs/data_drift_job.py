@@ -12,7 +12,6 @@ from src.monitoring.reports_builder.data_drift_report import DataDriftReport
 from src.monitoring.handling_drift.data_drift_handler import DataDriftHandler
 
 
-
 class DataDriftJob:
     def __init__(self):
         self.data_drift_report = DataDriftReport(NUM_COLS, CAT_COLS)

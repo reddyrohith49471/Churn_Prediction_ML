@@ -5,3 +5,4 @@ joblib
 imblearn
 scikit-learn==1.6.1
 evidently
+python-dotenv

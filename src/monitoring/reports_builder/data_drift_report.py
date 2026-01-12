@@ -38,10 +38,10 @@ class DataDriftReport(BaseReport):
         print(html_path)
         self.my_eval.save_html(str(html_path))
 
-        return self._extract_drift_summary(json.loads(self.my_eval.json()))
+        return self._extract_drift_summary(json.loads(self.my_eval.json()), json_path, html_path)
 
     
-    def _extract_drift_summary(self, report_json: dict) -> dict:
+    def _extract_drift_summary(self, report_json: dict, json_path: Path, html_path: Path) -> dict:
         drifted_columns = []
 
         for metric in report_json["metrics"]:
@@ -62,6 +62,8 @@ class DataDriftReport(BaseReport):
         return {
             "dataset_drift": dataset_drift,
             "drifted_columns": drifted_columns,
-            "drifted_count": len(drifted_columns)
+            "drifted_count": len(drifted_columns),
+            "json_path": json_path,
+            "html_path": html_path
         }
 

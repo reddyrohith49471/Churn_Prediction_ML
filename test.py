@@ -26,3 +26,15 @@ print(live.columns)
 
 # REPORT_DIR = BASE_DIR / "monitoring" / "data_reports"
 # print(REPORT_DIR)
+
+
+
+
+
+
+1. sending email 
+2. segment wise drift
+3. a/b testing
+4. clean architecture diagram with readme.md
+5. writing code in fastapi or flask
+6. Deploying in render

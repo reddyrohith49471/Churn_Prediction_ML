@@ -32,7 +32,7 @@ print(live.columns)
 
 
 
-1. sending email 
+1. sending email  -- completed
 2. segment wise drift
 3. a/b testing
 4. clean architecture diagram with readme.md

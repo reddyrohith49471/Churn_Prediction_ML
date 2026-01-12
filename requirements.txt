@@ -6,3 +6,8 @@ imblearn
 scikit-learn==1.6.1
 evidently
 python-dotenv
+fastapi
+uvicorn
+pydantic
+python-multipart
+jinja2

@@ -1,3 +1,5 @@
 gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod,MonthlyCharges,TotalCharges,prediction,model_version,timestamp
 Male,0,Yes,Yes,1,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,50.0,100.0,0,RFC_TUNED_V1,2026-01-09T12:04:36.810036
 Male,0,Yes,Yes,1,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,50.0,124.0,0,RFC_TUNED_V1,2026-01-09T12:04:47.389170
+Female,1,No,No,2,No,No phone service,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,123.0,1345.0,1,RFC_TUNED_V1,2026-01-12T16:06:26.545052
+Male,0,Yes,Yes,2,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,132.0,1000.0,1,RFC_TUNED_V1,2026-01-12T16:06:40.977260

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Churn Prediction</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 16px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>📊 Customer Churn Prediction</h2>
+
+    <form action="/predict" method="post">
+
+        <label>Gender</label>
+        <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <label>Senior Citizen</label>
+        <select name="SeniorCitizen">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+
+        <label>Partner</label>
+        <select name="Partner"><option>Yes</option><option>No</option></select>
+
+        <label>Dependents</label>
+        <select name="Dependents"><option>Yes</option><option>No</option></select>
+
+        <label>Tenure (months)</label>
+        <input type="number" name="tenure" required>
+
+        <label>Phone Service</label>
+        <select name="PhoneService"><option>Yes</option><option>No</option></select>
+
+        <label>Multiple Lines</label>
+        <select name="MultipleLines">
+            <option>Yes</option>
+            <option>No</option>
+            <option>No phone service</option>
+        </select>
+
+        <label>Internet Service</label>
+        <select name="InternetService">
+            <option>DSL</option>
+            <option>Fiber optic</option>
+            <option>No</option>
+        </select>
+
+        <label>Contract</label>
+        <select name="Contract">
+            <option>Month-to-month</option>
+            <option>One year</option>
+            <option>Two year</option>
+        </select>
+
+        <label>Paperless Billing</label>
+        <select name="PaperlessBilling"><option>Yes</option><option>No</option></select>
+
+        <label>Payment Method</label>
+        <select name="PaymentMethod">
+            <option>Electronic check</option>
+            <option>Mailed check</option>
+            <option>Bank transfer (automatic)</option>
+            <option>Credit card (automatic)</option>
+        </select>
+
+        <label>Monthly Charges</label>
+        <input type="number" step="0.01" name="MonthlyCharges" required>
+
+        <label>Total Charges</label>
+        <input type="number" step="0.01" name="TotalCharges" required>
+
+        <button type="submit">Predict Churn</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">{{ prediction }}</div>
+    {% endif %}
+
+</body>
+</html>

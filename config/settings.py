@@ -1,8 +1,7 @@
 from pathlib import Path
 import os
-
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-
+BASE_DIR = PROJECT_ROOT  
 RUNTIME_DIR = Path(
     os.getenv("RUNTIME_DIR", "/tmp/churn_prediction")
 )
@@ -16,7 +15,6 @@ TRAINING_DATA = (
     / "reference"
     / "WA_Fn-UseC_-Telco-Customer-Churn 2.csv"
 )
-
 LIVE_DATA = RUNTIME_DIR / "live_data.csv"
 
 MODEL_VERSION = "RFC_TUNED_V1"

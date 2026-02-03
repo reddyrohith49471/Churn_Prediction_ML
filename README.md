@@ -145,7 +145,7 @@ One of the core highlights of this project is **post-deployment monitoring**.
   - Automatic scaling
   - Continuous availability
 
-Deployment link: *(https://churn-prediction-ml-zvrg.onrender.com/predict)*
+Deployment link: *(https://churn-prediction-ml-zvrg.onrender.com)*
 
 ---
 
@@ -214,6 +214,7 @@ Planned extensions include:
 ## 👨‍💻 Author
 
 **Reddy Rohith Kosinepalli**    
+
 
 
 

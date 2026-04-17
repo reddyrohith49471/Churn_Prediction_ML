@@ -3,7 +3,6 @@ from config.settings import LIVE_DATA
 from src.monitoring.config.drift_config import MIN_ROWS_REQUIRED
 from src.core.inference_service import InferenceService
 
-
 class ChurnService:
     def __init__(self):
         self.predictor = InferenceService()

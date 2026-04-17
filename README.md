@@ -42,9 +42,9 @@ flowchart TD
     E --> F[(Live Data Storage)]
     F --> G[Drift Detection Engine]
     
-    G --> H[Data Drift (Evidently)]
-    G --> I[Prediction Drift (Chi-Square)]
-    G --> J[Model Drift Metrics]
+    G --> H["Data Drift (Evidently)"]
+    G --> I["Prediction Drift (Chi-Square)"]
+    G --> J["Model Drift Metrics"]
     
     H & I & J --> K[Generate HTML/JSON Reports]
     K --> L[Automated Email Alerts to Stakeholders]
@@ -83,7 +83,6 @@ You can run this project locally on your machine either natively via Python or v
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/reddyrohith49471/Churn_Prediction_ML.git
-   cd Churn_Prediction_ML
    ```
 2. **Create a virtual environment & install dependencies:**
    ```bash

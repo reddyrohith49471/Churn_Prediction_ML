@@ -5,6 +5,7 @@ from fastapi.templating import Jinja2Templates
 
 from helper import ChurnService
 
+
 app = FastAPI(
     title="Customer Churn Prediction",
     description="Web-based customer churn prediction system",
